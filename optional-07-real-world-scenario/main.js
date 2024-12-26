@@ -16,6 +16,7 @@ addOrder('Bob', [
   { name: 'Kopi', price: 10000 },
 ]);
 
+console.log('Pesanan awal:');
 console.log(orders);
 
 /**
@@ -47,6 +48,7 @@ console.log(orders);
 updateOrderStatus(orders[0].id, 'Diproses');
 updateOrderStatus(orders[1].id, 'Selesai');
 
+console.log('\nPesanan setelah pembaruan status:');
 console.log(orders);
 
 /**
@@ -75,6 +77,7 @@ console.log(orders);
  * ]
  */
 
+console.log('\nTotal pendapatan dari pesanan selesai:');
 console.log(calculateTotalRevenue());
 /**
  * Output yang diharapkan:
@@ -83,6 +86,7 @@ console.log(calculateTotalRevenue());
 
 deleteOrder(orders[0].id);
 
+console.log('\nPesanan setelah penghapusan:');
 console.log(orders);
 
 /**

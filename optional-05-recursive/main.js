@@ -12,13 +12,15 @@ console.log(
 
 const numberForFibonacci = 10;
 console.log(`Deret Fibonacci hingga elemen ${numberForFibonacci} adalah:`);
+const fibonacciSequence = [];
 for (let i = 0; i <= numberForFibonacci; i++) {
-  console.log(fibonacci(i));
+  fibonacciSequence.push(fibonacci(i));
+  console.log(`[ ${fibonacciSequence.join(', ')} ]`);
 }
 
 /**
  * Output yang diharapkan:
- * Deret Fibonacci hingga elemen  10 adalah:
+ * Deret Fibonacci hingga elemen 10 adalah:
  * [ 0 ]
  * [ 0, 1 ]
  * [ 0, 1, 1 ]
@@ -26,9 +28,8 @@ for (let i = 0; i <= numberForFibonacci; i++) {
  * [ 0, 1, 1, 2, 3 ]
  * [ 0, 1, 1, 2, 3, 5 ]
  * [ 0, 1, 1, 2, 3, 5, 8 ]
- * [ 0, 1, 1, 2, 3, 5, 8, 13]
- * [ 0, 1, 1, 2, 3, 5, 8, 13, 21]
+ * [ 0, 1, 1, 2, 3, 5, 8, 13 ]
+ * [ 0, 1, 1, 2, 3, 5, 8, 13, 21 ]
  * [ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 ]
  * [ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 ]
  */
-
